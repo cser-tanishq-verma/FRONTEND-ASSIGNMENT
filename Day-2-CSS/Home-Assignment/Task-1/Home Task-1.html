@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #e8eef7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .card {
+            background-color: white;
+            width: 500px;
+            padding: 40px 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-image {
+            width: 140px;
+            height: 140px;
+            border: 5px solid #5555ff;
+            border-radius: 50%;
+            margin: 0 auto 25px;
+            object-fit: cover;
+        }
+
+        .name {
+            font-size: 32px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .description {
+            font-size: 16px;
+            color: #888;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .divider {
+            height: 1px;
+            background-color: #ddd;
+            margin: 30px 0;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 28px;
+            font-weight: bold;
+            color: #5555ff;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: #aaa;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="profile.jpg" alt="Profile" class="profile-image">
+        
+        <h1 class="name">Some Name</h1>
+        
+        <p class="description">
+            Senior Software Architect with a passion for building scalable, high-performance systems and mentoring the next generation of developers.
+        </p>
+
+        <div class="divider"></div>
+
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-number">12+</div>
+                <div class="stat-label">Years XP</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">45</div>
+                <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">3.2k</div>
+                <div class="stat-label">Stars</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

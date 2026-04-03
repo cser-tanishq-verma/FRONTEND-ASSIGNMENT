@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+    @media screen and (max-width: 350px) {
+        .search-bar{
+            display: none;
+        }
+    }
+    
+    @media screen and (max-width: 700px) {
+        .search-bar {
+            flex: 0 1 150px;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 6px 8px;
+            font-size: 13px;    
+            box-sizing: border-box;
+        }
+    }
+</style>
+
+</head>
+
+<body>
+
+    <div 
+    
+    style="
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  border:2px solid black;
+  padding:10px;
+">
+
+  
+  <div style="display:flex; gap:20px; align-items:center;">
+    <div style=" padding:10px; ;" ><i class="fa-solid fa-face-dizzy"></i></div>
+    <div>HOME</div>
+    <div>CONTACT</div>
+  </div>
+
+ 
+  <div class="search-bar">
+    <input 
+      type="text" 
+      placeholder="Search..." 
+      style="padding:8px; width:200px;"
+    />
+  </div>
+
+  
+  <div style="display:flex; gap:10px; align-items:center;">
+    <div style="width:50px; height:30px; background-image: url(Day\ 3/spiderman.jpeg) ; background-size: contain; background-repeat: no-repeat;"></div>
+    <div>Logout</div>
+  </div>
+
+</div>
+</body>
+</html>

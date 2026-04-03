@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navbar</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3a3a3a;
+    padding: 12px 20px;
+    color: white;
+  }
+
+
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .logo span {
+    color: orange;
+  }
+
+  .icons {
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  /* Right section */
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 16px;
+  }
+
+  .status {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+    background-color: #00ff66;
+    border-radius: 50%;
+  }
+
+  a {
+    color: white;
+  }
+
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+
+  <!-- Left -->
+  <div class="left">
+    <div class="logo">&lt;<span>cdn</span>js&gt;</div>
+
+    <div class="icons">
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-solid fa-comments"></i>
+    </div>
+  </div>
+
+  <!-- Right -->
+  <div class="right">
+    <a href="#">About</a>
+    <a href="#">Libraries</a>
+    <a href="#">API</a>
+    <a href="#">GitHub</a>
+
+    <div class="status">
+      <span>Status</span>
+      <div class="dot"></div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

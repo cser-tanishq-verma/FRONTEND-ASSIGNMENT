@@ -1,0 +1,10 @@
+js
+
+types of env: browser rte, non-browser rte
+
+types of jse: V8 (chrome,edge, node,dino),
+	      spidermonkey (firefox), js core, chakra
+
+bare declaration: if we are defining a variable without any keyword
+
+
