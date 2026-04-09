@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="show-table">
+    <div [hidden]="currview !== 'question'">
+      <h1>Q{{ quesindex + 1 }} {{ questions[quesindex] }}</h1>
+    </div>
+    <div [hidden]="currview !== 'task'">
+      <h1>{{ tasks[taskindex] }}</h1>
+    </div>
+  </div>
+
+  <div class="buton">
+    <button class="que-bt" (click)="nextques()">question</button>
+    <button class="task-bt" (click)="nexttask()">task</button>
+  </div>
+</div>

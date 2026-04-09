@@ -1,0 +1,12 @@
+<p>first-component works!</p>
+<h1>COMPONENT</h1>
+<h1 [style]="style">{{name}}</h1>
+<button (click)="click()">Click Me</button>
+<div class="names-container">
+  <button (click)="prev()" class="nav-button">Prev</button>
+  <h2 class="current-name">{{currentName}}</h2>
+  <button (click)="next()" class="nav-button">Next</button>
+</div>
+
+<h1>{{ipVal}}</h1>
+<input type="text" (input)="inputValchange($event.target.value)" [value]="ipVal">
