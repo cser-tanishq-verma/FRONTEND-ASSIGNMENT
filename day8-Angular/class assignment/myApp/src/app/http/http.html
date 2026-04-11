@@ -1,0 +1,8 @@
+<p>http works!</p>
+@for (item of userData();track item.id){
+    <p>{{item | json}}</p>
+}@empty{
+    <h1>no data found</h1>
+}
+<button (click)="addUser()">add me</button>
+<button (click)="login()">login me</button>
