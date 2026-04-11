@@ -1,0 +1,14 @@
+<p>dash works!</p>
+<button (click)="navigateToHome()">Go Home</button>
+<section>
+    <div>
+        <div>
+            <a routerLink="/dash" routerLinkActive= "active"[routerLinkActiveOptions]="{exact:true}">Add User</a>
+        </div>
+
+        <a routerLink="showuser">Show users</a>
+    </div>
+    <div>
+        <router-outlet></router-outlet>
+    </div>
+</section>
