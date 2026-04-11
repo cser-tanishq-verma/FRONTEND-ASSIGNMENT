@@ -1,0 +1,16 @@
+<p>table-view works!</p>
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <th>Roll No</th>
+    <th>age</th>
+    <th>qualification</th>
+  </tr>
+
+  <tr *ngFor="let s of students">
+    <td>{{ s.name }}</td>
+    <td>{{ s.rollNo }}</td>
+    <td>{{ s.age }}</td>
+    <td>{{ s.qualification }}</td>
+  </tr>
+</table>

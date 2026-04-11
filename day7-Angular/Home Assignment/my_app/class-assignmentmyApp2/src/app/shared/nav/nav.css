@@ -1,0 +1,12 @@
+nav{
+    display: flex;
+    gap: 20px;
+    height: 70px;
+    background: linear-gradient(90deg, #159827, #d46232);
+    align-items: center;
+}
+.active{
+    color: white;
+    font-weight: bold;
+    border: solid 2px red;
+}

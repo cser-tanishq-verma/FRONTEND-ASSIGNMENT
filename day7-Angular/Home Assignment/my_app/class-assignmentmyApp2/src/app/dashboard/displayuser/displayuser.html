@@ -1,0 +1,26 @@
+<div class="display-users-container">
+  <div class="display-header">
+    <h2>Display Users</h2>
+    <div *ngIf="(users$ | async) as users" class="users-count">
+      Total: <span class="count-badge">{{ users.length }}</span>
+    </div>
+  </div>
+  
+  <div *ngIf="(users$ | async) as users">
+    <div *ngIf="users.length === 0" class="no-users">
+      <p>No users added yet</p>
+    </div>
+    
+    <div *ngIf="users.length > 0" class="users-container">
+      <div *ngFor="let user of users; let i = index" class="user-card">
+        <div class="user-image">
+          <img [src]="user.image" [alt]="user.name" />
+        </div>
+        <div class="user-info">
+          <h3>{{ user.name }}</h3>
+          <p>Age: {{ user.age }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="dashboard-container">
+  <div class="dashboard-header">
+    <h1>User Management Dashboard</h1>
+    <button class="home-btn" (click)="navigatetohome()">GO HOME</button>
+  </div>
+
+  <nav class="dashboard-nav">
+    <a routerLink="/dashboard" routerLinkActive="active" >
+      <span class="nav-icon">➕</span> Add User
+    </a>
+    <a routerLink="/dashboard/displayuser" routerLinkActive="active">
+      <span class="nav-icon">👥</span> Show Users
+    </a>
+  </nav>
+
+  <section class="dashboard-content">
+    <router-outlet></router-outlet>
+  </section>
+</div>
