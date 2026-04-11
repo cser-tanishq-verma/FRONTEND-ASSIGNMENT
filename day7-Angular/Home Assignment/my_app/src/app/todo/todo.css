@@ -1,0 +1,69 @@
+.container {
+  width: 400px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+  border: 5px dotted navy;
+  padding: 25px;
+}
+
+.top-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.add-box {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 8px;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.filters button.active {
+  background: black;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.left-btn {
+  background: orange;
+}
+
+.right-btn {
+  background: green;
+}
+
+.done {
+  text-decoration: line-through;
+  color: gray;
+}

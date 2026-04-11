@@ -1,0 +1,51 @@
+<div class="container">
+
+    <div class="top-buttons">
+        <button (click)="setView('add')">Add Task</button>
+        <button (click)="setView('list')">All Tasks</button>
+    </div>
+
+    @switch(view) {
+
+    @case('add') {
+    <div class="add-box">
+        <input type="text" [(ngModel)]="taskInput" placeholder="Enter task">
+        <button (click)="addTask()">Add</button>
+    </div>
+    }
+
+    @case('list') {
+
+    <div class="filters">
+        <button [class.active]="filter==='all'" (click)="setFilter('all')">All</button>
+        <button [class.active]="filter==='pending'" (click)="setFilter('pending')">Pending</button>
+        <button [class.active]="filter==='done'" (click)="setFilter('done')">Finished</button>
+    </div>
+
+
+    <div class="task-list">
+        @for (task of getFilteredTasks(); track task) {
+        <div class="task-item">
+
+            <button class="left-btn" (click)="task.status='pending'">
+                X
+            </button>
+            <span [class.done]="task.status === 'done'">
+                {{task.title}}
+            </span>
+
+            <button class="right-btn" (click)="task.status='done'">
+                done
+            </button>
+
+        </div>
+        } @empty {
+        <p>No tasks found</p>
+        }
+    </div>
+
+    }
+
+    }
+
+</div>
